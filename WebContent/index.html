@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Taxi To Go Homepage</title>
+			
+		<!-- CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/stylish-portfolio.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	</head>
+		
+	<body>
+		<!-- Navigation -->
+		<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+		<nav id="sidebar-wrapper">
+			<!-- List of navigation options -->
+			<ul class="sidebar-nav">
+				<li><a id="menu-close" href="#" class="btn btn-dark btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+				<li class="sidebar-brand"><a href="#top">Taxi To go</a></li>
+				<li><a href="#top">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		
+		<!-- Header -->
+		<header id="top" class="header">
+			<div class="text-vertical-center">
+				<h1 style="color: rgb(231, 141, 33)">Taxi To Go</h1>
+				<h3 style="color: rgb(231, 141, 33)">Get your Taxi now!</h3>
+			</div>
+		</header>
+		
+		<!-- Services -->
+		<section id="services" class="services bg-primary" style="background-color: rgb(231, 141, 33)">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-lg-10 col-lg-offset-1">
+						<h2>Our Services</h2>
+						<hr class="small">
+						<div class="row">
+							<!-- Service 1: Taxis and drivers list -->
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+										
+									<!-- Services icon -->
+									<span class="fa-stack fa-4x"> 
+										<i class="fa fa-circle fa-stack-2x"></i> 
+										<i class="fa fa-taxi fa-stack-1x text-primary"></i>
+									</span>
+										
+									<!-- Services title -->
+									<h4>
+										<strong>Taxis and Drivers List</strong>
+									</h4>
+										
+									<!-- Services description -->
+									<p>Find all the details you will dream of about our taxis
+										and drivers!</p>
+										
+									<!-- Services form -->	
+									<form action="/TaxiToGo/TaxiToGoController/taxicar-list" method="POST">
+										<button type="submit" class="btn btn-default btn-lg">
+											<span aria-hidden="true"></span>Click Here
+										</button>
+									</form>
+								</div>
+							</div>
+								
+							<!-- Service 2: Favorites list -->
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+									
+									<!-- Services icon -->
+									<span class="fa-stack fa-4x"> 
+										<i class="fa fa-circle fa-stack-2x"></i> 
+										<i class="fa fa-check-square-o fa-stack-1x text-primary"></i>
+									</span>
+									
+									<!-- Services title -->
+									<h4>
+										<strong>My Favorites List</strong>
+									</h4>
+										
+									<!-- Services description -->
+									<p>View to see all your favorite taxis and drivers!</p>
+									
+									<!-- Services page link -->	
+									<a href="user_favorites_list.jsp">
+										<button type="submit" class="btn btn-default btn-lg">
+											<span aria-hidden="true"></span>Click Here
+										</button>
+									</a>
+								</div>
+							</div>
+	
+							<!-- Service 3: Find closest taxi car -->
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+								
+									<!-- Services icon -->
+									<span class="fa-stack fa-4x"> 
+										<i class="fa fa-circle fa-stack-2x"></i> 
+										<i class="fa fa-map-marker fa-stack-1x text-primary"></i>
+									</span>
+									
+									<!-- Services title -->
+									<h4>
+										<strong>Find Taxi Car</strong>
+									</h4>
+									
+									<!-- Services description -->
+									<p>Find the closest taxi to your current location</p>
+										
+									<!-- Services page link -->	
+									<a href="user_curent_location.html">
+										<button type="submit" class="btn btn-default btn-lg">
+											<span aria-hidden="true"></span>Click Here
+										</button>
+									</a>
+								</div>
+							</div>
+	
+							<!-- Service 4: Admin entrance -->
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+								
+									<!-- Services icon -->
+									<span class="fa-stack fa-4x"> 
+										<i class="fa fa-circle fa-stack-2x"></i> 
+										<i class="fa fa-users fa-stack-1x text-primary"></i>
+									</span>
+									
+									<!-- Services title -->
+									<h4>
+										<strong>Admin Entrance</strong>
+									</h4>
+									
+									<!-- Services description -->
+									<p>Access to Administrator area<br>(Only for permitted users)</p>
+										
+									<!-- Services form -->	
+									<form action="/TaxiToGo/TaxiToGoController/admin-login" method="POST">
+										<button type="submit" class="btn btn-default btn-lg">
+											<span aria-hidden="true"></span>Click Here
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<!-- /.row (nested) -->
+					</div>
+					<!-- /.col-lg-10 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- Callout -->
+		
+		<!-- Contact -->
+		<section id="contact" >
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-10 col-lg-offset-1 text-center">
+							
+							<h4><strong>Taxi To Go</strong></h4>
+							
+							<p>52 Golomb street<br>Holon, Israel</p>
+								
+							<!-- Contact info -->
+							<ul class="list-unstyled">
+								<li><i class="fa fa-phone fa-fw"></i> (03) 765-4657</li>
+								<li><i class="fa fa-envelope-o fa-fw"></i> 
+								<a href="mailto:name@example.com">taxitogo@gmail.com</a></li>
+							</ul>
+								
+							<br>
+							<ul class="list-inline">
+								<!-- Facebook -->
+								<li><a href="https://www.facebook.com/GetTaxiIsrael">
+									<i class="fa fa-facebook fa-fw fa-3x"></i></a>
+								</li>
+									
+								<!-- Twitter -->
+								<li><a href="https://twitter.com/gettaxi">
+									<i class="fa fa-twitter fa-fw fa-3x"></i></a>
+								</li>
+									
+								<!-- Dribbble -->
+								<li><a href="https://dribbble.com/tags/taxi">
+									<i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+								</li>
+							</ul>
+								
+							<hr class="small">
+							<p class="text-muted">Copyright &copy; Taxi To Go 2014</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+		
+		<!-- Javascript -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

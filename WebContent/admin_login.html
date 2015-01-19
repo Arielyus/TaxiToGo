@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Admin login</title>
+		
+		<!-- CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/stylish-portfolio.css" rel="stylesheet">
+		<link href="css/templatemo_style.css" rel="stylesheet">
+		<link href="css/driver-list.css" rel="stylesheet">
+		<link href="css/form-style.css" rel="stylesheet">
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<link href="css/sky-forms.css" rel="stylesheet">
+		<link href="css/sky-forms-green.css" rel="stylesheet">	
+	</head>
+	
+	<body class="bg-green">
+		<div id="templatemo_header_wrapper">
+			<!-- Main Logo -->
+			<div id="logo">
+				<!-- Main Logo Button -->
+				<a href="index.html">
+ 					<img src="images/logo-1.png" height="90" width="300">
+				</a>
+			</div>
+			
+			<!-- Header Buttons -->
+			<div id="homebutton1">
+				<!-- Home Button -->
+				<a href="index.html">
+					<button type="submit" class="btn btn-link btn-lg"><i class="fa fa-home"></i> Home</button>
+				</a>
+			</div>
+		</div>
+		
+		<!-- Banner -->
+		<div id="templatemo_banner_wrapper">
+			<div id="templatemo_banner"></div>
+		</div>
+	
+		<div id="column_w800">
+			<div class="margin_bottom_20"></div>
+			
+			<!-- Title -->
+			<div class="header_02">Administrator Panel</div>
+				<p>See all the Taxi-Drivers and Taxi-Companies in our database</p>
+			<div class="cleaner"></div>
+		</div>
+		
+		<!-- Log in Form -->
+		<div class="body body-s">		
+			<form id="sky-form" class="sky-form">
+				<header>Login form</header>
+				
+				<fieldset>	
+					<!-- Email -->				
+					<section>
+						<div class="row">
+							<label class="label col col-4">E-mail</label>
+							<div class="col col-8">
+								<label class="input">
+									<i class="icon-append fa fa-user"></i>
+									<input type="email" id="inputEmail" name="email">
+								</label>
+							</div>
+						</div>
+					</section>
+					
+					<!-- Password -->
+					<section>
+						<div class="row">
+							<label class="label col col-4">Password</label>
+							<div class="col col-8">
+								<label class="input">
+									<i class="icon-append fa fa-lock"></i>
+									<input type="password" id="inputPassword" name="password">
+								</label>
+							</div>
+						</div>
+					</section>
+					
+					<!-- Keep me logged in -->
+					<section>
+						<div class="row">
+							<div class="col col-4"></div>
+							<div class="col col-8">
+								<label class="checkbox"><input type="checkbox" id="login" name="remember" checked><i></i>Keep me logged in</label>
+							</div>
+						</div>
+					</section>
+				</fieldset>
+				
+				<!-- Log in button -->
+				<footer>
+					<button type="submit" id="loginButton" class="button">Log in</button>
+				</footer>
+			</form>			
+		</div>
+		
+		<!-- AJAX result message -->
+		<div id="ajax_message"><p id="result"></p></div>
+		<div class="margin_bottom_20"></div>
+		
+		<!-- Footer -->
+		<div id="templatemo_footer_wrapper">
+		<div id="templatemo_footer"></div></div>
+	
+		<!-- Javascript -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.form.min.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/jquery.modal.js"></script>
+		<script type="text/javascript" src="js/admin_login_ajax.js"></script>
+	</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Add form</title>
+			
+		<!-- CSS -->
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">		
+		<link href="css/stylish-portfolio.css" rel="stylesheet">	
+		<link href="css/templatemo_style.css" rel="stylesheet">
+		<link href="css/driver-list.css" rel="stylesheet">
+		<link href="css/sky-forms.css" rel="stylesheet">
+		<link href="css/sky-forms-green.css" rel="stylesheet">
+		<link href="css/form-style.css" rel="stylesheet">		
+	</head>
+		
+	<body>
+		<div id="templatemo_header_wrapper">
+			<!-- Main Logo -->
+			<div id="logo">
+				<!-- Main Logo Button -->
+				<a href="index.html">
+ 					<img src="images/logo-1.png" height="90" width="300">
+ 				</a>
+			</div>
+				
+			<!-- Header Buttons -->
+			<div id="homebutton2">
+				<!-- Home Button -->
+				<a href="index.html">
+					<button type="submit" class="btn btn-link btn-lg"><i class="fa fa-home"></i> Home</button>
+				</a>
+				<!-- Admin Button -->
+				<a href="admin_index.jsp">
+					<button type="submit" class="btn btn-link btn-lg"><i class="fa fa-user"></i> Admin</button>
+				</a>
+			</div>
+		</div>
+		
+		<!-- Banner -->
+		<div id="templatemo_banner_wrapper">
+			<div id="templatemo_banner"></div>
+		</div>
+		
+		<div id="column_w800">
+			<div class="margin_bottom_20"></div>
+			<!-- Title -->
+			<div class="header_02">Add new taxi cars and drivers</div>
+				<p>Add new taxis and drivers into TaxiToGo database</p>
+			<div class="cleaner"></div>
+		</div>
+		
+		<div class="body body-s">
+			<!-- Add Form -->
+			<form id="sky-form" class="sky-form">
+				<header>Add form</header>
+					
+				<fieldset>
+					<!-- Taxi car plate number -->
+					<section>
+						<label class="input"> <i class="icon-append fa fa-taxi"></i>
+							<input type="text" name="plate" id="plate" placeholder="Taxi car plate">
+						</label>
+					</section>
+						
+					<!-- Taxi car classification -->
+					<section>
+						<label class="select"><i class="icon-append fa fa-car"></i>
+							<select name="classification" id="classification">
+								<option value="0" selected disabled>Classification</option>
+								<option value="CUV">CUV</option>
+								<option value="SUV">SUV</option>
+								<option value="MPV">MPV</option>
+								<option value="Sedan">Sedan</option>
+								<option value="Minibus">Minibus</option>
+								<option value="Microvan">Microvan</option>
+								<option value="Limousine">Limousine</option>
+								<option value="Hatchback">Hatchback</option>
+								<option value="Station wagon">Station wagon</option>
+							</select>
+						</label>
+					</section>	
+		
+					<!-- Driver name -->
+					<section>
+						<label class="input"> <i class="icon-append fa fa-user"></i>
+							<input type="text" name="drivername" id="drivername" 
+								placeholder="Driver full name">
+						</label>
+					</section>
+		
+					<!-- Company name -->
+					<section>
+						<label class="input"> <i class="icon-append fa fa-briefcase"></i>
+							<input type="text" name="companyname" id="companyname" 
+								placeholder="Company name">
+						</label>
+					</section>
+		
+					<!-- Driver rating -->
+					<section>
+						<div class="rating">
+							<input type="radio" name="quality" value="5" id="quality-5">
+							<label for="quality-5"><i class="fa fa-star"></i></label> 
+								
+							<input type="radio" name="quality" value="4" id="quality-4"> 
+							<label for="quality-4"><i class="fa fa-star"></i></label> 
+								
+							<input type="radio" name="quality" value="3" id="quality-3"> 
+							<label for="quality-3"><i class="fa fa-star"></i></label> 
+								
+							<input type="radio" name="quality" value="2" id="quality-2"> 
+							<label for="quality-2"><i class="fa fa-star"></i></label> 
+								
+							<input type="radio" name="quality" value="1" id="quality-1"> 
+							<label for="quality-1"><i class="fa fa-star"></i></label>
+							Driver rating
+						</div>
+					</section>				
+						
+					<!-- Taxi car latitude coordinate -->
+					<section>
+						<label class="input"> <i class="icon-append fa fa-arrows-h"></i>
+							<input type="text" name="latitude" id="latitude" placeholder="Latitude">
+						</label>
+					</section>
+						
+					<!-- Taxi car longitude coordinate -->
+					<section>
+						<label class="input"> <i class="icon-append fa fa-arrows-v"></i>
+							<input type="text" name="longitude" id="longitude" placeholder="Longitude">
+						</label>
+					</section>
+						
+					<!-- Driver end shift -->
+					<section>
+						<label class="input"> <i class="icon-append fa fa-clock-o"></i>
+							<input type="text" name="workinghours" id="workinghours" placeholder="End shift">
+						</label>
+					</section>
+				</fieldset>
+					
+				<!-- Add button -->
+				<footer>
+					<button type="submit" class="button" id="addbutton">Add</button>
+				</footer>
+			</form>
+		</div>
+			
+		<!-- AJAX result message -->
+		<div id="ajax_message"><p id="result"></p></div>
+		<div class="margin_bottom_20"></div>
+			
+		<!-- Footer -->
+		<div id="templatemo_footer_wrapper">
+		<div id="templatemo_footer"></div></div>
+
+		<!-- Javascript -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.form.min.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/jquery.modal.js"></script>
+		<script type="text/javascript" src="js/admin_taxicar_add_ajax.js"></script>	
+		<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>	
+	</body>
+</html>

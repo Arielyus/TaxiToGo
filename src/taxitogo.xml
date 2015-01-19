@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="il.ac.hit.taxitogo.model.taxicar.TaxiCar" table="TaxiCar">
+		<id name="taxiPlateNumber" column="Plate">
+		</id>
+
+		<property name="taxiCompanyName">
+			<column name="Company" />
+		</property>
+
+		<property name="driverName">
+			<column name="DriverName" />
+		</property>
+
+		<property name="taxiDriverRating">
+			<column name="Rating" />
+		</property>
+
+		<property name="taxiClassification">
+			<column name="Classification" />
+		</property>
+		
+		<property name="latitude">
+			<column name="Latitude" />
+		</property>
+
+		<property name="longitude">
+			<column name="Longitude" />
+		</property>
+		
+		<property name="workingHours">
+			<column name="EndShift" />
+		</property>	
+	</class>
+
+	<class name="il.ac.hit.taxitogo.model.taxicompany.TaxiCompany" table="TaxiCompany">
+		<id name="companyName" column="CompanyName">
+		</id>
+
+		<property name="companyAddress">
+			<column name="Address" />
+		</property>	
+	</class>
+	
+	<class name="il.ac.hit.taxitogo.model.user.User" table="permissions">
+		<id name="username" column="Username">
+		</id>
+
+		<property name="password">
+			<column name="Password" />
+		</property>	
+	</class>
+	
+</hibernate-mapping>

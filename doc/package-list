@@ -1,0 +1,9 @@
+il.ac.hit.taxitogo.controller
+il.ac.hit.taxitogo.controller.jersey
+il.ac.hit.taxitogo.controller.listener
+il.ac.hit.taxitogo.model.exception
+il.ac.hit.taxitogo.model.factory
+il.ac.hit.taxitogo.model.taxicar
+il.ac.hit.taxitogo.model.taxicompany
+il.ac.hit.taxitogo.model.test
+il.ac.hit.taxitogo.model.user

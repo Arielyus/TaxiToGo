@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Find location</title>
+			
+		<!-- CSS -->
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">		
+		<link href="css/stylish-portfolio.css" rel="stylesheet">	
+		<link href="css/templatemo_style.css" rel="stylesheet">
+		<link href="css/driver-list.css" rel="stylesheet">
+		<link href="css/sky-forms.css" rel="stylesheet">
+		<link href="css/sky-forms-green.css" rel="stylesheet">
+		<link href="css/form-style.css" rel="stylesheet">		
+	</head>
+		
+	<body>
+		<!-- Main Logo -->
+		<div id="templatemo_header_wrapper">
+			<div id="logo">
+				<a href="index.html">
+ 					<img src="images/logo-1.png" height="90" width="300">
+				</a>
+			</div>
+				
+			<!-- Home Button -->
+			<div id="homebutton1">
+				<a href="index.html">
+					<button type="submit" class="btn btn-link btn-lg"><i class="fa fa-home"></i> Home</button>
+				</a>
+			</div>
+		</div>
+			
+		<!-- Banner -->
+		<div id="templatemo_banner_wrapper">
+			<div id="templatemo_banner"></div>
+		</div>
+		
+		<div id="column_w800">
+			<div class="margin_bottom_20"></div>
+			<!-- Title -->
+			<div class="header_02">Find closest taxi cars</div>
+				<p>Get closest taxi cars based on your location</p>
+			<div class="cleaner"></div>
+		</div>
+			
+		<br><br>
+			
+		<!-- Find location using Google maps -->
+		<div id="googlemap">
+			<input id="addressinput" placeholder="52 Golomb Street, Holon, Israel / 32.0145490, 34.7732830" 
+				class="form-control" type="text" style="width: 640px"/>
+					
+			<!-- User current latitude and longitude location coordinates -->	
+			<input id="findbutton" type="button" class="btn btn-primary btn" value="Find" onclick="return findbutton_onclick()"/>
+				
+			<!-- Form -->
+			<form action="/TaxiToGo/TaxiToGoController/closest-taxicar-list">
+			    <input type="hidden" name="latitude" class="address_input" size="40"/>
+				<input type="hidden" name="longitude" class="address_input" size="40"/>
+				<i class="fa fa-map-marker"></i>
+			    <input type="submit" class="btn btn-link btn" value="Find closest taxi cars to your location"/>
+	   		</form>
+		</div>
+			
+		<br>
+		<!-- Displaying the Google map -->
+		<div id="map"></div>
+			
+		<!-- Footer -->
+		<div id="templatemo_footer_wrapper">
+		<div id="templatemo_footer"></div></div>
+		
+		<!-- Javascript -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.form.min.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/jquery.modal.js"></script>
+		<script type="text/javascript" src="js/user_location_coordinates.js"></script>			
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	</body>
+</html>
